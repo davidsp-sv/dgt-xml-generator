@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Contribución parafiscal",
+    "code": "01"
+  },
+  {
+    "name": "Timbre de la Cruz Roja",
+    "code": "02"
+  },
+  {
+    "name": "Timbre de Benemérito Cuerpo de Bomberos de Costa Rica.",
+    "code": "03"
+  },
+  {
+    "name": "Cobro de un tercero",
+    "code": "04"
+  },
+  {
+    "name": "Costos de Exportación",
+    "code": "05"
+  },
+  {
+    "name": "Impuesto de servicio 10%",
+    "code": "06"
+  },
+  {
+    "name": "Timbre de Colegios Profesionales",
+    "code": "07"
+  },
+  {
+    "name": "Depósitos de Garantía",
+    "code": "08"
+  },
+  {
+    "name": "Multas o Penalizaciones",
+    "code": "09"
+  },
+  {
+    "name": "Intereses Moratorios",
+    "code": "10"
+  },
+  {
+    "name": "Otros Cargos",
+    "code": "99"
+  }
+]

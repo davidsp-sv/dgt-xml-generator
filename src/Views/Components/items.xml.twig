@@ -1,0 +1,51 @@
+<DetalleServicio>
+  {% for item in line_items %}
+  <LineaDetalle>
+    <NumeroLinea>{{ loop.index }}</NumeroLinea>
+    {% if item.customs_tariff_code %}
+    <PartidaArancelaria>{{ item.customs_tariff_code }}</PartidaArancelaria>
+    {% endif %}
+    <CodigoCABYS>{{ item.cabys_code }}</CodigoCABYS>
+    {% if item.commercial_codes and item.commercial_codes|length > 0 %} {% for
+    commercial_code in item.commercial_codes|slice(0,5) %}
+    <CodigoComercial>
+      <Tipo>{{ commercial_code.type.code }}</Tipo>
+      <Codigo>{{ commercial_code.code }}</Codigo>
+    </CodigoComercial>
+    {% endfor %} {% endif %}
+    <Cantidad>{{ item.quantity }}</Cantidad>
+    <UnidadMedida>{{ item.unit_measure.code }}</UnidadMedida>
+    {% if item.commercial_unit_measure %}
+    <UnidadMedidaComercial>{{
+      item.commercial_unit_measure
+    }}</UnidadMedidaComercial>
+    {% endif %} {% if item.vin_or_serial_numbers and
+    item.vin_or_serial_numbers|length > 0 %} {% for vin in
+    item.vin_or_serial_numbers %}
+    <NumeroVINoSerie>{{ vin }}</NumeroVINoSerie>
+    {% endfor %} {% endif %} {% if item.medication_registration %}
+    <RegistroMedicamento>{{
+      item.medication_registration
+    }}</RegistroMedicamento>
+    {% endif %} {% if item.pharmaceutical_form %}
+    <FormaFarmaceutica>{{ item.pharmaceutical_form.code }}</FormaFarmaceutica>
+    {% endif %} {% if item.transaction_type.code %}
+    <TipoTransaccion>{{ item.transaction_type.code }}</TipoTransaccion>
+    {% endif %}
+    <Detalle>{{ item.description }}</Detalle>
+    <PrecioUnitario>{{ item.unit_price }}</PrecioUnitario>
+    <MontoTotal>{{ item.total_amount }}</MontoTotal>
+    {% include 'Components/discounts.xml.twig' with { 'discounts':
+    item.discounts } %}
+    <SubTotal>{{ item.sub_total }}</SubTotal>
+    <BaseImponible>{{ item.taxable_base }}</BaseImponible>
+    {% include 'Components/taxes.xml.twig' with { 'node': 'Impuesto',
+    'nodeAmount': 'Monto', 'taxes': item.taxes } %}
+    <ImpuestoAsumidoEmisorFabrica>{{
+      item.assumed_factory_tax
+    }}</ImpuestoAsumidoEmisorFabrica>
+    <ImpuestoNeto>{{ item.total_tax }}</ImpuestoNeto>
+    <MontoTotalLinea>{{ item.total }}</MontoTotalLinea>
+  </LineaDetalle>
+  {% endfor %}
+</DetalleServicio>

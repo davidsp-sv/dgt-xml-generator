@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Anula Documento de Referencia",
+    "code": "01"
+  },
+  {
+    "name": "Corrige monto",
+    "code": "02"
+  },
+  {
+    "name": "Referencia a otro documento",
+    "code": "04"
+  },
+  {
+    "name": "Sustituye comprobante provisional por contingencia.",
+    "code": "05"
+  },
+  {
+    "name": "Devolución de mercancía",
+    "code": "06"
+  },
+  {
+    "name": "Sustituye comprobante electrónico.",
+    "code": "07"
+  },
+  {
+    "name": "Factura Endosada",
+    "code": "08"
+  },
+  {
+    "name": "Nota de crédito financiera",
+    "code": "09"
+  },
+  {
+    "name": "Nota de débito financiera",
+    "code": "10"
+  },
+  {
+    "name": "Proveedor No Domiciliado",
+    "code": "11"
+  },
+  {
+    "name": "Crédito por exoneración posterior a la facturación",
+    "code": "12"
+  },
+  {
+    "name": "Otros",
+    "code": "99"
+  }
+]

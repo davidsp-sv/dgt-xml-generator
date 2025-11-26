@@ -1,0 +1,34 @@
+<ResumenFactura>
+  <CodigoTipoMoneda>
+    <CodigoMoneda>{{ currency.currency_code }}</CodigoMoneda>
+    <TipoCambio>{{ currency.exchange_rate }}</TipoCambio>
+  </CodigoTipoMoneda>
+  <TotalServGravados>{{ summary.total_taxed_services }}</TotalServGravados>
+  <TotalServExentos>{{ summary.total_exempt_services }}</TotalServExentos>
+  <TotalServExonerado>{{
+    summary.total_exonerated_services
+  }}</TotalServExonerado>
+  <TotalServNoSujeto>{{
+    summary.total_non_taxable_services
+  }}</TotalServNoSujeto>
+  <TotalMercanciasGravadas>{{
+    summary.total_taxed_goods
+  }}</TotalMercanciasGravadas>
+  <TotalMercanciasExentas>{{
+    summary.total_exempt_goods
+  }}</TotalMercanciasExentas>
+  <TotalMercExonerada>{{ summary.total_exonerated_goods }}</TotalMercExonerada>
+  <TotalMercNoSujeta>{{ summary.total_non_taxable_goods }}</TotalMercNoSujeta>
+  <TotalGravado>{{ summary.total_taxed }}</TotalGravado>
+  <TotalExento>{{ summary.total_exempt }}</TotalExento>
+  <TotalExonerado>{{ summary.total_exonerated }}</TotalExonerado>
+  <TotalNoSujeto>{{ summary.total_non_taxable }}</TotalNoSujeto>
+  <TotalVenta>{{ summary.total_sale }}</TotalVenta>
+  <TotalDescuentos>{{ summary.total_discounts }}</TotalDescuentos>
+  <TotalVentaNeta>{{ summary.total_net_sale }}</TotalVentaNeta>
+  {% include 'Components/taxes.xml.twig' with { 'node': 'TotalDesgloseImpuesto',
+  'nodeAmount': 'TotalMontoImpuesto', 'taxes': summary.taxes } %}
+  <TotalImpuesto>{{ summary.total_tax }}</TotalImpuesto>
+  {% include 'Components/payments.xml.twig' %}
+  <TotalComprobante>{{ summary.total_voucher }}</TotalComprobante>
+</ResumenFactura>

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Genera crédito IVA",
+    "code": "01"
+  },
+  {
+    "name": "Genera Crédito parcial del IVA",
+    "code": "02"
+  },
+  {
+    "name": "Bienes de Capital",
+    "code": "03"
+  },
+  {
+    "name": "Gasto corriente no genera crédito",
+    "code": "04"
+  },
+  {
+    "name": "Proporcionalidad",
+    "code": "05"
+  }
+]

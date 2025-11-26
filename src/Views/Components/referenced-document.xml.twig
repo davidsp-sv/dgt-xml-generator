@@ -1,0 +1,18 @@
+{% if referenced_documents|length > 0 %} {% for referenced_document in
+referenced_documents %}
+<InformacionReferencia>
+  <TipoDocIR>{{ referenced_document.document_type.code }}</TipoDocIR>
+  {% if referenced_document.other_document_type %}
+  <TipoDocRefOTRO>{{ referenced_document.other_document_type }}</TipoDocRefOTRO>
+  {% endif %}
+  <Numero>{{ referenced_document.document_number }}</Numero>
+  <FechaEmisionIR>{{ referenced_document.emission_date }}</FechaEmisionIR>
+  <Codigo>{{ referenced_document.referenced_code.code }}</Codigo>
+  {% if referenced_document.other_referenced_code %}
+  <CodigoReferenciaOTRO>{{
+    referenced_document.other_referenced_code
+  }}</CodigoReferenciaOTRO>
+  {% endif %}
+  <Razon>{{ referenced_document.reason }}</Razon>
+</InformacionReferencia>
+{% endfor %} {% endif %}

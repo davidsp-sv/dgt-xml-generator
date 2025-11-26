@@ -1,0 +1,42 @@
+[
+  {
+    "code": "01",
+    "name": "Impuesto al Valor Agregado"
+  },
+  {
+    "code": "02",
+    "name": "Impuesto Selectivo de Consumo"
+  },
+  {
+    "code": "03",
+    "name": "Impuesto Único a los Combustibles"
+  },
+  {
+    "code": "04",
+    "name": "Impuesto específico de Bebidas Alcohólicas"
+  },
+  {
+    "code": "05",
+    "name": "Impuesto Específico sobre las bebidas envasadas sin contenido alcohólico y jabones de tocador"
+  },
+  {
+    "code": "06",
+    "name": "Impuesto a los Productos de Tabaco"
+  },
+  {
+    "code": "07",
+    "name": "IVA (cálculo especial)"
+  },
+  {
+    "code": "08",
+    "name": "IVA Régimen de Bienes Usados (Factor)"
+  },
+  {
+    "code": "12",
+    "name": "Impuesto Específico al Cemento"
+  },
+  {
+    "code": "99",
+    "name": "Otros"
+  }
+]

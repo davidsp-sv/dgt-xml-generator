@@ -1,0 +1,26 @@
+[
+  {
+    "code": "01",
+    "name": "Cédula Física"
+  },
+  {
+    "code": "02",
+    "name": "Cédula Jurídica"
+  },
+  {
+    "code": "03",
+    "name": "DIMEX"
+  },
+  {
+    "code": "04",
+    "name": "NITE"
+  },
+  {
+    "code": "05",
+    "name": "Extranjero No Domiciliado"
+  },
+  {
+    "code": "06",
+    "name": "No Contribuyente"
+  }
+]

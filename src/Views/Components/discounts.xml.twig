@@ -1,0 +1,11 @@
+{% for discount in discounts %}
+<Descuento>
+  <MontoDescuento>{{ discount.amount }}</MontoDescuento>
+  <CodigoDescuento>{{ discount.discount_type.code }}</CodigoDescuento>
+  {% if discount.other_discount_type %}
+  <CodigoDescuentoOTRO>{{ discount.other_discount_type }}</CodigoDescuentoOTRO>
+  {% endif %} {% if discount.description %}
+  <NaturalezaDescuento>{{ discount.description }}</NaturalezaDescuento>
+  {% endif %}
+</Descuento>
+{% endfor %}

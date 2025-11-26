@@ -1,0 +1,12 @@
+{% apply spaceless %}<?xml version="1.0" encoding="UTF-8" ?>
+<FacturaElectronica
+  xmlns="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica"
+>
+  {% include 'Components/info.xml.twig' %} {% include
+  'Components/items.xml.twig' %} {% include 'Components/summary.xml.twig' %} {%
+  include 'Components/referenced-document.xml.twig' %} {% include
+  'Components/additional-info.xml.twig' %}
+</FacturaElectronica>
+{% endapply %}

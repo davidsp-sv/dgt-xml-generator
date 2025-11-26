@@ -1,0 +1,15 @@
+{% for tax in taxes %}
+<{{ node }}>
+  <Codigo>{{ tax.tax_type.code }}</Codigo>
+  {% if tax.other_tax_type %}
+  <CodigoImpuestoOTRO>{{ tax.other_tax_type }}</CodigoImpuestoOTRO>
+  {% endif %}
+  {% if tax.iva_type %}
+  <CodigoTarifaIVA>{{ tax.iva_type.code }}</CodigoTarifaIVA>
+  {% endif %}
+  {% if tax.rate %}
+  <Tarifa>{{ tax.rate }}</Tarifa>
+  {% endif %}
+  <{{ nodeAmount }}>{{ tax.amount }}</{{ nodeAmount }}>
+</{{ node }}>
+{% endfor %}

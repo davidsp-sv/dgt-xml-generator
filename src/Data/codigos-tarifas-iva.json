@@ -1,0 +1,46 @@
+[
+  {
+    "code": "01",
+    "name": "Tarifa 0% (Artículo 32, num 1, RLIVA)"
+  },
+  {
+    "code": "02",
+    "name": "Tarifa reducida 1%"
+  },
+  {
+    "code": "03",
+    "name": "Tarifa reducida 2%"
+  },
+  {
+    "code": "04",
+    "name": "Tarifa reducida 4%"
+  },
+  {
+    "code": "05",
+    "name": "Transitorio 0%"
+  },
+  {
+    "code": "06",
+    "name": "Transitorio 4%"
+  },
+  {
+    "code": "07",
+    "name": "Tarifa transitoria 8%"
+  },
+  {
+    "code": "08",
+    "name": "Tarifa general 13%"
+  },
+  {
+    "code": "09",
+    "name": "Tarifa reducida 0.5%"
+  },
+  {
+    "code": "10",
+    "name": "Tarifa Exenta"
+  },
+  {
+    "code": "11",
+    "name": "Tarifa 0% sin derecho a crédito"
+  }
+]

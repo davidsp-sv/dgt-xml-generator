@@ -1,0 +1,33 @@
+{% apply spaceless %}<?xml version="1.0" encoding="UTF-8" ?>
+<MensajeReceptor
+  xmlns="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/mensajeReceptor"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/mensajeReceptor"
+>
+  <Clave>{{ document_key }}</Clave>
+  <NumeroCedulaEmisor>{{ issuer_identification_number }}</NumeroCedulaEmisor>
+  <FechaEmisionDoc>{{ date }}</FechaEmisionDoc>
+  <Mensaje>{{ message_type.code }}</Mensaje>
+  <DetalleMensaje>{{ message_detail }}</DetalleMensaje>
+  {% if message_type.code != 3 %}
+  <MontoTotalImpuesto>{{ total_tax }}</MontoTotalImpuesto>
+  {% endif %}
+  <CodigoActividad>{{ receiver.activity }}</CodigoActividad>
+  {% if message_type.code != 3 %}
+  <CondicionImpuesto>{{ tax_condition.code }}</CondicionImpuesto>
+  <MontoTotalImpuestoAcreditar>{{
+    total_tax_to_credit
+  }}</MontoTotalImpuestoAcreditar>
+  <MontoTotalDeGastoAplicable>{{
+    total_applicable_expense
+  }}</MontoTotalDeGastoAplicable>
+  <TotalFactura>{{ total }}</TotalFactura>
+  {% endif %}
+  <NumeroCedulaReceptor>{{
+    receiver.identification_number
+  }}</NumeroCedulaReceptor>
+  <NumConsecutivoReceptor>{{
+    receiver.sequential_number
+  }}</NumConsecutivoReceptor>
+</MensajeReceptor>
+{% endapply %}

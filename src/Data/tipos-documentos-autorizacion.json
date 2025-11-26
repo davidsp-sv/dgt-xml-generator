@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Compras autorizadas por la Dirección General de Tributación",
+    "code": "01"
+  },
+  {
+    "name": "Ventas exentas a diplomáticos",
+    "code": "02"
+  },
+  {
+    "name": "Autorizado por Ley especial",
+    "code": "03"
+  },
+  {
+    "name": "Exenciones Dirección General de Hacienda Autorización Local Genérica",
+    "code": "04"
+  },
+  {
+    "name": "Exenciones Dirección General de Hacienda Transitorio V (servicios de ingeniería, arquitectura, topografía obra civil)",
+    "code": "05"
+  },
+  {
+    "name": "Servicios turísticos inscritos ante el Instituto Costarricense de Turismo (ICT)",
+    "code": "06"
+  },
+  {
+    "name": "Transitorio XVII (Recolección, Clasificación, almacenamiento de Reciclaje y reutilizable)",
+    "code": "07"
+  },
+  {
+    "name": "Exoneración a Zona Franca",
+    "code": "08"
+  },
+  {
+    "name": "Exoneración de servicios complementarios para la exportación articulo 11 RLIVA",
+    "code": "09"
+  },
+  {
+    "name": "Órgano de las corporaciones municipales",
+    "code": "10"
+  },
+  {
+    "name": "Exenciones Dirección General de Hacienda Autorización de Impuesto Local Concreta",
+    "code": "11"
+  },
+  {
+    "name": "Otros",
+    "code": "99"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "code": "01",
+    "name": "Efectivo"
+  },
+  {
+    "code": "02",
+    "name": "Tarjeta"
+  },
+  {
+    "code": "03",
+    "name": "Cheque"
+  },
+  {
+    "code": "04",
+    "name": "Transferencia – depósito bancario"
+  },
+  {
+    "code": "05",
+    "name": "Recaudado por terceros"
+  },
+  {
+    "code": "06",
+    "name": "SINPE MOVIL"
+  },
+  {
+    "code": "07",
+    "name": "Plataforma Digital"
+  },
+  {
+    "code": "99",
+    "name": "Otros (se debe indicar el medio de pago en la representación gráfica)"
+  }
+]

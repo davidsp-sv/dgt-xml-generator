@@ -1,0 +1,30 @@
+[
+  {
+    "code": 1,
+    "name": "SAN JOSE"
+  },
+  {
+    "code": 2,
+    "name": "ALAJUELA"
+  },
+  {
+    "code": 3,
+    "name": "CARTAGO"
+  },
+  {
+    "code": 4,
+    "name": "HEREDIA"
+  },
+  {
+    "code": 5,
+    "name": "GUANACASTE"
+  },
+  {
+    "code": 6,
+    "name": "PUNTARENAS"
+  },
+  {
+    "code": 7,
+    "name": "LIMON"
+  }
+]

@@ -1,0 +1,9 @@
+{% for payment in payments %}
+<MedioPago>
+  <TipoMedioPago>{{ payment.payment_method.code }}</TipoMedioPago>
+  {% if payment.other_payment_method %}
+  <MedioPagoOtros>{{ payment.other_payment_method }}</MedioPagoOtros>
+  {% endif %}
+  <TotalMedioPago>{{ payment.amount }}</TotalMedioPago>
+</MedioPago>
+{% endfor %}

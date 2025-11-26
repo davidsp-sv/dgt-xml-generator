@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Descuento por Regalía",
+    "code": "01"
+  },
+  {
+    "name": "Descuento por Regalía o Bonificaciones IVA Cobrado al Cliente",
+    "code": "02"
+  },
+  {
+    "name": "Descuento por Bonificación",
+    "code": "03"
+  },
+  {
+    "name": "Descuento por volumen",
+    "code": "04"
+  },
+  {
+    "name": "Descuento por Temporada (estacional)",
+    "code": "05"
+  },
+  {
+    "name": "Descuento promocional",
+    "code": "06"
+  },
+  {
+    "name": "Descuento Comercial",
+    "code": "07"
+  },
+  {
+    "name": "Descuento por frecuencia",
+    "code": "08"
+  },
+  {
+    "name": "Descuento sostenido",
+    "code": "09"
+  },
+  {
+    "name": "Otros descuentos",
+    "code": "99"
+  }
+]

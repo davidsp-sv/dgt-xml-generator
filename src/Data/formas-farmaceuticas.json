@@ -1,0 +1,918 @@
+[
+  {
+    "code": "01",
+    "name": "Anillo vaginal"
+  },
+  {
+    "code": "02",
+    "name": "Aposito"
+  },
+  {
+    "code": "03",
+    "name": "Capleta"
+  },
+  {
+    "code": "04",
+    "name": "Cápsula"
+  },
+  {
+    "code": "05",
+    "name": "Cápsula blanda"
+  },
+  {
+    "code": "06",
+    "name": "Capsula con granulado con recubrimiento enterico"
+  },
+  {
+    "code": "07",
+    "name": "Cápsula con gránulos de liberación retardada"
+  },
+  {
+    "code": "08",
+    "name": "Cápsula con pellets entéricos"
+  },
+  {
+    "code": "09",
+    "name": "Capsula de gelatina blanda"
+  },
+  {
+    "code": "10",
+    "name": "Cápsula de gelatina dura"
+  },
+  {
+    "code": "11",
+    "name": "Capsula de gelatina suave"
+  },
+  {
+    "code": "12",
+    "name": "Cápsula de liberación controlada"
+  },
+  {
+    "code": "13",
+    "name": "Capsula de liberacion prolongada"
+  },
+  {
+    "code": "14",
+    "name": "Capsula de liberacion retardada"
+  },
+  {
+    "code": "15",
+    "name": "Cápsula de liberación retardada (conteniendo gránulos con cubierta entéric)"
+  },
+  {
+    "code": "16",
+    "name": "Capsula de liberacion retardada gastrorresistente"
+  },
+  {
+    "code": "17",
+    "name": "Cápsula de liberación retardada(conteniendo gránulos con cubierta entérica)"
+  },
+  {
+    "code": "18",
+    "name": "Capsula dura"
+  },
+  {
+    "code": "19",
+    "name": "Capsula dura de liberacion prolongada"
+  },
+  {
+    "code": "20",
+    "name": "Capsula gastrorresistente"
+  },
+  {
+    "code": "21",
+    "name": "Cápsula para inhalación"
+  },
+  {
+    "code": "22",
+    "name": "Capsulas con granulos entericos"
+  },
+  {
+    "code": "23",
+    "name": "Cápsulas con microgránulos de liberación prolongada"
+  },
+  {
+    "code": "24",
+    "name": "Capsulas con microgranulos gastrorresistentes"
+  },
+  {
+    "code": "25",
+    "name": "Cápsulas con pellets de liberación prolongada"
+  },
+  {
+    "code": "26",
+    "name": "Cápsulas de liberación modificada"
+  },
+  {
+    "code": "27",
+    "name": "Capsulas duras de liberación prolongada"
+  },
+  {
+    "code": "28",
+    "name": "Cápsulas duras gastrorresistentes"
+  },
+  {
+    "code": "29",
+    "name": "Cápsulas para inhalación"
+  },
+  {
+    "code": "30",
+    "name": "Caramelo"
+  },
+  {
+    "code": "31",
+    "name": "Champu"
+  },
+  {
+    "code": "32",
+    "name": "Comprimido"
+  },
+  {
+    "code": "33",
+    "name": "Comprimido bicapa"
+  },
+  {
+    "code": "34",
+    "name": "Comprimido bucodispersable"
+  },
+  {
+    "code": "35",
+    "name": "Comprimido con cubierta pelicular"
+  },
+  {
+    "code": "36",
+    "name": "Comprimido con recubrimiento enterico"
+  },
+  {
+    "code": "37",
+    "name": "Comprimido de disolucion bucal"
+  },
+  {
+    "code": "38",
+    "name": "Comprimido de liberación modificada"
+  },
+  {
+    "code": "39",
+    "name": "Comprimido de liberación osmótica"
+  },
+  {
+    "code": "40",
+    "name": "Comprimido de liberacion prolongada"
+  },
+  {
+    "code": "41",
+    "name": "Comprimido de liberacion retardada"
+  },
+  {
+    "code": "42",
+    "name": "Comprimido dispersable"
+  },
+  {
+    "code": "43",
+    "name": "Comprimido dispersable / masticable"
+  },
+  {
+    "code": "44",
+    "name": "Comprimido efervescente"
+  },
+  {
+    "code": "45",
+    "name": "Comprimido entérico"
+  },
+  {
+    "code": "46",
+    "name": "Comprimido gastrorresistente"
+  },
+  {
+    "code": "47",
+    "name": "Comprimido masticable"
+  },
+  {
+    "code": "48",
+    "name": "Comprimido orodispersable"
+  },
+  {
+    "code": "49",
+    "name": "Comprimido peliculado de liberacion modificada"
+  },
+  {
+    "code": "50",
+    "name": "Comprimido peliculado de liberación prolongada"
+  },
+  {
+    "code": "51",
+    "name": "Comprimido ranurado"
+  },
+  {
+    "code": "52",
+    "name": "Comprimido recubierto"
+  },
+  {
+    "code": "53",
+    "name": "Comprimido recubierto con película"
+  },
+  {
+    "code": "54",
+    "name": "Comprimido recubierto de liberación prolongada"
+  },
+  {
+    "code": "55",
+    "name": "Comprimido recubierto gastroresistente"
+  },
+  {
+    "code": "56",
+    "name": "Comprimido sublingual"
+  },
+  {
+    "code": "57",
+    "name": "Comprimidos de liberación prolongada recubiertos con película"
+  },
+  {
+    "code": "58",
+    "name": "Comprimidos ranurados de liberación modificada"
+  },
+  {
+    "code": "59",
+    "name": "Comprimidos recubiertos de liberación controlada"
+  },
+  {
+    "code": "60",
+    "name": "Comprimidos recubiertos de liberación sostenida"
+  },
+  {
+    "code": "61",
+    "name": "Comprimidos revestidos"
+  },
+  {
+    "code": "62",
+    "name": "Concentrado para solución inyectable"
+  },
+  {
+    "code": "63",
+    "name": "Concentrado para solución para infusión"
+  },
+  {
+    "code": "64",
+    "name": "Concentrado para solución para perfusión"
+  },
+  {
+    "code": "65",
+    "name": "Crema"
+  },
+  {
+    "code": "66",
+    "name": "Crema vaginal"
+  },
+  {
+    "code": "67",
+    "name": "Dispersión liposomal inyectable endovenosa"
+  },
+  {
+    "code": "68",
+    "name": "Dispositivo vaginal con polvo"
+  },
+  {
+    "code": "69",
+    "name": "Elixir"
+  },
+  {
+    "code": "70",
+    "name": "Emulsion"
+  },
+  {
+    "code": "71",
+    "name": "Emulsion inyectable"
+  },
+  {
+    "code": "72",
+    "name": "Emulsion oral"
+  },
+  {
+    "code": "73",
+    "name": "Enema"
+  },
+  {
+    "code": "74",
+    "name": "Enjuague bucal"
+  },
+  {
+    "code": "75",
+    "name": "Espuma"
+  },
+  {
+    "code": "76",
+    "name": "Gas medicinal"
+  },
+  {
+    "code": "77",
+    "name": "Gas para inhalación"
+  },
+  {
+    "code": "78",
+    "name": "Gasa impregnada con ungüento"
+  },
+  {
+    "code": "79",
+    "name": "Gel"
+  },
+  {
+    "code": "80",
+    "name": "Gel capilar"
+  },
+  {
+    "code": "81",
+    "name": "Gel oftalmico"
+  },
+  {
+    "code": "82",
+    "name": "Gel oral"
+  },
+  {
+    "code": "83",
+    "name": "Gel vaginal"
+  },
+  {
+    "code": "84",
+    "name": "Gotas óticas en solución"
+  },
+  {
+    "code": "85",
+    "name": "Gragea"
+  },
+  {
+    "code": "86",
+    "name": "Gragea de liberación prolongada"
+  },
+  {
+    "code": "87",
+    "name": "Gragea gastroresistente"
+  },
+  {
+    "code": "88",
+    "name": "Granulado para solución oral"
+  },
+  {
+    "code": "89",
+    "name": "Granulado para suspension"
+  },
+  {
+    "code": "90",
+    "name": "Gránulo gastrorresistente para suspensión"
+  },
+  {
+    "code": "91",
+    "name": "Granulos"
+  },
+  {
+    "code": "92",
+    "name": "Granulos de liberacion prolongada"
+  },
+  {
+    "code": "93",
+    "name": "Gránulos de liberación prolongada para suspensión"
+  },
+  {
+    "code": "94",
+    "name": "Granulos efervescentes"
+  },
+  {
+    "code": "95",
+    "name": "Granulos gastro-resistentes"
+  },
+  {
+    "code": "96",
+    "name": "Granulos para solucion"
+  },
+  {
+    "code": "97",
+    "name": "Granulos para suspension"
+  },
+  {
+    "code": "98",
+    "name": "Implante"
+  },
+  {
+    "code": "99",
+    "name": "Jabon solido"
+  },
+  {
+    "code": "100",
+    "name": "Jalea"
+  },
+  {
+    "code": "101",
+    "name": "Jarabe"
+  },
+  {
+    "code": "102",
+    "name": "Jarabe (solucion oral)"
+  },
+  {
+    "code": "103",
+    "name": "Laca para uñas"
+  },
+  {
+    "code": "104",
+    "name": "Liofilizado para suspensión inyectable"
+  },
+  {
+    "code": "105",
+    "name": "Líquido"
+  },
+  {
+    "code": "106",
+    "name": "Líquido anestésico"
+  },
+  {
+    "code": "107",
+    "name": "Liquido para inhalación"
+  },
+  {
+    "code": "108",
+    "name": "Líquido para inhalación del vapor"
+  },
+  {
+    "code": "109",
+    "name": "Líquido viscoso"
+  },
+  {
+    "code": "110",
+    "name": "Locion"
+  },
+  {
+    "code": "111",
+    "name": "Microesferas liofilizadas estériles"
+  },
+  {
+    "code": "112",
+    "name": "Microesferas para suspensión inyectable"
+  },
+  {
+    "code": "113",
+    "name": "Mixtura"
+  },
+  {
+    "code": "114",
+    "name": "Óvulo"
+  },
+  {
+    "code": "115",
+    "name": "Parche"
+  },
+  {
+    "code": "116",
+    "name": "Parche transdermico"
+  },
+  {
+    "code": "117",
+    "name": "Pastilla"
+  },
+  {
+    "code": "118",
+    "name": "Pelicula bucodispersable"
+  },
+  {
+    "code": "119",
+    "name": "Polvo"
+  },
+  {
+    "code": "120",
+    "name": "Polvo  concentrado para solución para infusión"
+  },
+  {
+    "code": "121",
+    "name": "Polvo  para suspensión de lib. Prolong para jeringa  prellenada"
+  },
+  {
+    "code": "122",
+    "name": "Polvo cristalino para solución inyectable"
+  },
+  {
+    "code": "123",
+    "name": "Polvo efervescente"
+  },
+  {
+    "code": "124",
+    "name": "Polvo estéril para solución inyectable"
+  },
+  {
+    "code": "125",
+    "name": "Polvo granulado"
+  },
+  {
+    "code": "126",
+    "name": "Polvo granulado para solución oral"
+  },
+  {
+    "code": "127",
+    "name": "Polvo liofilizado"
+  },
+  {
+    "code": "128",
+    "name": "Polvo liofilizado para concentrado para solución para perfusión"
+  },
+  {
+    "code": "129",
+    "name": "Polvo liofilizado para solución inyectable"
+  },
+  {
+    "code": "130",
+    "name": "Polvo liofilizado para solución para infusión intravenosa"
+  },
+  {
+    "code": "131",
+    "name": "Polvo liofilizado para solución para perfusión"
+  },
+  {
+    "code": "132",
+    "name": "Polvo liofilizado para suspensión inyectable"
+  },
+  {
+    "code": "133",
+    "name": "Polvo liofilizado para suspensión inyectable de liberación prolongada"
+  },
+  {
+    "code": "134",
+    "name": "Polvo liofilizado para uso parenteral"
+  },
+  {
+    "code": "135",
+    "name": "Polvo para concentrado para solución para infusión"
+  },
+  {
+    "code": "136",
+    "name": "Polvo para concentrado para solución para infusión intravenosa"
+  },
+  {
+    "code": "137",
+    "name": "Polvo para concentrado para solución para perfusión"
+  },
+  {
+    "code": "138",
+    "name": "Polvo para concentrado para solución para perfusión intravenoso"
+  },
+  {
+    "code": "139",
+    "name": "Polvo para infusion"
+  },
+  {
+    "code": "140",
+    "name": "Polvo para inhalacion"
+  },
+  {
+    "code": "141",
+    "name": "Polvo para inhalación en cápsulas"
+  },
+  {
+    "code": "142",
+    "name": "Polvo para inhalacion en capsulas duras"
+  },
+  {
+    "code": "143",
+    "name": "Polvo para solucion"
+  },
+  {
+    "code": "144",
+    "name": "Polvo para solución estéril inyectable"
+  },
+  {
+    "code": "145",
+    "name": "Polvo para solucion inyectable"
+  },
+  {
+    "code": "146",
+    "name": "Polvo para solucion oral"
+  },
+  {
+    "code": "147",
+    "name": "Polvo para solución para infusión"
+  },
+  {
+    "code": "148",
+    "name": "Polvo para solución para perfusión"
+  },
+  {
+    "code": "149",
+    "name": "Polvo para suspensión"
+  },
+  {
+    "code": "150",
+    "name": "Polvo para suspension inyectable"
+  },
+  {
+    "code": "151",
+    "name": "Polvo para suspensión oral"
+  },
+  {
+    "code": "152",
+    "name": "Polvo para suspensión oral y rectal"
+  },
+  {
+    "code": "153",
+    "name": "Polvo topico"
+  },
+  {
+    "code": "154",
+    "name": "Polvo y disolvente para solución inyectable."
+  },
+  {
+    "code": "155",
+    "name": "Pomada"
+  },
+  {
+    "code": "156",
+    "name": "Sistema de liberación vaginal"
+  },
+  {
+    "code": "157",
+    "name": "Sistema intrauterino de liberación"
+  },
+  {
+    "code": "158",
+    "name": "Solución"
+  },
+  {
+    "code": "159",
+    "name": "Solución anestésica inhalatoria"
+  },
+  {
+    "code": "160",
+    "name": "Solucion concentrada"
+  },
+  {
+    "code": "161",
+    "name": "Solución concentrada para infusión"
+  },
+  {
+    "code": "162",
+    "name": "Solución de infusión para aplicación intravenosa"
+  },
+  {
+    "code": "163",
+    "name": "Solución en aerosol"
+  },
+  {
+    "code": "164",
+    "name": "Solución en spray"
+  },
+  {
+    "code": "165",
+    "name": "Solución estéril"
+  },
+  {
+    "code": "166",
+    "name": "Solución estéril para inyección"
+  },
+  {
+    "code": "167",
+    "name": "Solución gotas"
+  },
+  {
+    "code": "168",
+    "name": "Solución intraocular"
+  },
+  {
+    "code": "169",
+    "name": "Solucion inyectable"
+  },
+  {
+    "code": "170",
+    "name": "Solución inyectable concentrada"
+  },
+  {
+    "code": "171",
+    "name": "Solución inyectable concentrado para infusión"
+  },
+  {
+    "code": "172",
+    "name": "Solución inyectable de liberación prolongada"
+  },
+  {
+    "code": "173",
+    "name": "Solucion inyectable para infusion"
+  },
+  {
+    "code": "174",
+    "name": "Solución oftálmica"
+  },
+  {
+    "code": "175",
+    "name": "Solución oleosa inyectable"
+  },
+  {
+    "code": "176",
+    "name": "Solucion oral"
+  },
+  {
+    "code": "177",
+    "name": "Solucion para dialisis peritoneal"
+  },
+  {
+    "code": "178",
+    "name": "Solucion para hemodialisis"
+  },
+  {
+    "code": "179",
+    "name": "Solución para infusión  intravenosa"
+  },
+  {
+    "code": "180",
+    "name": "Solucion para inhalacion"
+  },
+  {
+    "code": "181",
+    "name": "Solucion para irrigacion"
+  },
+  {
+    "code": "182",
+    "name": "Solucion para nebulizacion"
+  },
+  {
+    "code": "183",
+    "name": "Solución para perfusión"
+  },
+  {
+    "code": "184",
+    "name": "Solucion para uñas"
+  },
+  {
+    "code": "185",
+    "name": "Solucion rectal"
+  },
+  {
+    "code": "186",
+    "name": "Spray solución nasal"
+  },
+  {
+    "code": "187",
+    "name": "Supositorio"
+  },
+  {
+    "code": "188",
+    "name": "Suspension"
+  },
+  {
+    "code": "189",
+    "name": "Suspensión  para inhalación"
+  },
+  {
+    "code": "190",
+    "name": "Suspensión acuosa"
+  },
+  {
+    "code": "191",
+    "name": "Suspensión en aerosol"
+  },
+  {
+    "code": "192",
+    "name": "Suspensión en spray"
+  },
+  {
+    "code": "193",
+    "name": "Suspensión estéril"
+  },
+  {
+    "code": "194",
+    "name": "Suspensión inyectable"
+  },
+  {
+    "code": "195",
+    "name": "Suspensión inyectable de liberación prolongada"
+  },
+  {
+    "code": "196",
+    "name": "Suspension oral"
+  },
+  {
+    "code": "197",
+    "name": "Suspensión para inhalación"
+  },
+  {
+    "code": "198",
+    "name": "Suspensión presurizada"
+  },
+  {
+    "code": "199",
+    "name": "Tableta"
+  },
+  {
+    "code": "200",
+    "name": "Tableta bicapa"
+  },
+  {
+    "code": "201",
+    "name": "Tableta con capa entérica"
+  },
+  {
+    "code": "202",
+    "name": "Tableta con cubierta entérica"
+  },
+  {
+    "code": "203",
+    "name": "Tableta cubierta"
+  },
+  {
+    "code": "204",
+    "name": "Tableta de acción prolongada"
+  },
+  {
+    "code": "205",
+    "name": "Tableta de liberacion prolongada"
+  },
+  {
+    "code": "206",
+    "name": "Tableta de liberación retardada."
+  },
+  {
+    "code": "207",
+    "name": "Tableta dispersable"
+  },
+  {
+    "code": "208",
+    "name": "Tableta efervescente"
+  },
+  {
+    "code": "209",
+    "name": "Tableta masticable"
+  },
+  {
+    "code": "210",
+    "name": "Tableta orodispersable"
+  },
+  {
+    "code": "211",
+    "name": "Tableta para chupar"
+  },
+  {
+    "code": "212",
+    "name": "Tableta ranurada"
+  },
+  {
+    "code": "213",
+    "name": "Tableta recubierta"
+  },
+  {
+    "code": "214",
+    "name": "Tableta recubierta con película"
+  },
+  {
+    "code": "215",
+    "name": "Tableta recubierta de liberación extendida"
+  },
+  {
+    "code": "216",
+    "name": "Tableta recubierta de liberacion modificada"
+  },
+  {
+    "code": "217",
+    "name": "Tableta recubierta de liberación prolongada"
+  },
+  {
+    "code": "218",
+    "name": "Tableta recubierta entérica"
+  },
+  {
+    "code": "219",
+    "name": "Tableta recubierta gastrorresistente"
+  },
+  {
+    "code": "220",
+    "name": "Tableta revestida"
+  },
+  {
+    "code": "221",
+    "name": "Tableta sublingual"
+  },
+  {
+    "code": "222",
+    "name": "Tabletas de disolución oral instantánea"
+  },
+  {
+    "code": "223",
+    "name": "Tabletas de liberación extendida"
+  },
+  {
+    "code": "224",
+    "name": "Tabletas dispersables / masticables"
+  },
+  {
+    "code": "225",
+    "name": "Tabletas laqueadas"
+  },
+  {
+    "code": "226",
+    "name": "Tabletas recubiertas de acción prolongada"
+  },
+  {
+    "code": "227",
+    "name": "Tabletas recubiertas de liberacion retardada"
+  },
+  {
+    "code": "228",
+    "name": "Tintura"
+  },
+  {
+    "code": "229",
+    "name": "Unguento"
+  }
+]

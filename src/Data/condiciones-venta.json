@@ -1,0 +1,66 @@
+[
+  {
+    "code": "01",
+    "name": "Contado"
+  },
+  {
+    "code": "02",
+    "name": "Crédito"
+  },
+  {
+    "code": "03",
+    "name": "Consignación"
+  },
+  {
+    "code": "04",
+    "name": "Apartado"
+  },
+  {
+    "code": "05",
+    "name": "Arrendamiento con opción de compra"
+  },
+  {
+    "code": "06",
+    "name": "Arrendamiento en función financiera"
+  },
+  {
+    "code": "07",
+    "name": "Cobro a favor de un tercero"
+  },
+  {
+    "code": "08",
+    "name": "Servicios prestados al Estado"
+  },
+  {
+    "code": "09",
+    "name": "Pago de servicios prestado al Estado"
+  },
+  {
+    "code": "10",
+    "name": "Venta a crédito en IVA hasta 90 días (Artículo 27, LIVA)"
+  },
+  {
+    "code": "11",
+    "name": "Pago de venta a crédito en IVA hasta 90 días (Artículo 27, LIVA)"
+  },
+  {
+    "code": "12",
+    "name": "Venta Mercancía No Nacionalizada"
+  },
+  {
+    "code": "13",
+    "name": "Venta Bienes Usados No Contribuyente"
+  },
+  {
+    "code": "14",
+    "name": "Arrendamiento Operativo"
+  },
+  {
+    "code": "15",
+    "name": "Arrendamiento Financiero"
+  },
+  {
+    "code": "99",
+    "name": "Otros (se debe indicar la condición de la venta en la representación gráfica)"
+  }
+]

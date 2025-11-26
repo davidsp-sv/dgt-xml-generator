@@ -1,0 +1,14 @@
+[
+  {
+    "code": 1,
+    "name": "Aceptado"
+  },
+  {
+    "code": 2,
+    "name": "Aceptación parcial"
+  },
+  {
+    "code": 3,
+    "name": "Rechazado"
+  }
+]

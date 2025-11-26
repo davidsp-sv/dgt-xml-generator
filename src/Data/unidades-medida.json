@@ -1,0 +1,406 @@
+[
+  {
+    "name": "uno (índice de refracción)",
+    "code": "1"
+  },
+  {
+    "name": "minuto",
+    "code": "´"
+  },
+  {
+    "name": "segundo",
+    "code": "´´"
+  },
+  {
+    "name": "grado Celsius",
+    "code": "°C"
+  },
+  {
+    "name": "1 por metro",
+    "code": "1/m"
+  },
+  {
+    "name": "Ampere",
+    "code": "A"
+  },
+  {
+    "name": "ampere por metro",
+    "code": "A/m"
+  },
+  {
+    "name": "ampere por metro cuadrado",
+    "code": "A/m²"
+  },
+  {
+    "name": "Activo Virtual",
+    "code": "Acv"
+  },
+  {
+    "name": "Alquiler de uso habitacional",
+    "code": "Al"
+  },
+  {
+    "name": "Alquiler de uso comercial",
+    "code": "Alc"
+  },
+  {
+    "name": "bel",
+    "code": "B"
+  },
+  {
+    "name": "Becquerel",
+    "code": "Bq"
+  },
+  {
+    "name": "coulomb",
+    "code": "C"
+  },
+  {
+    "name": "coulomb por kilogramo",
+    "code": "C/kg"
+  },
+  {
+    "name": "coulomb por metro cuadrado",
+    "code": "C/m²"
+  },
+  {
+    "name": "coulomb por metro cúbico",
+    "code": "C/m³"
+  },
+  {
+    "name": "Cajuela de café",
+    "code": "Cc"
+  },
+  {
+    "name": "Candela",
+    "code": "Cd"
+  },
+  {
+    "name": "candela por metro cuadrado",
+    "code": "cd/m²"
+  },
+  {
+    "name": "Comisiones",
+    "code": "Cm"
+  },
+  {
+    "name": "centímetro",
+    "code": "cm"
+  },
+  {
+    "name": "cuartillos de café",
+    "code": "Cu"
+  },
+  {
+    "name": "día",
+    "code": "D"
+  },
+  {
+    "name": "electronvolt",
+    "code": "eV"
+  },
+  {
+    "name": "farad",
+    "code": "F"
+  },
+  {
+    "name": "farad por metro",
+    "code": "F/m"
+  },
+  {
+    "name": "fanega de café",
+    "code": "Fa"
+  },
+  {
+    "name": "Gramo",
+    "code": "G"
+  },
+  {
+    "name": "Galón",
+    "code": "Gal"
+  },
+  {
+    "name": "gray",
+    "code": "Gy"
+  },
+  {
+    "name": "gray por segundo",
+    "code": "Gy/s"
+  },
+  {
+    "name": "hora",
+    "code": "h"
+  },
+  {
+    "name": "henry",
+    "code": "H"
+  },
+  {
+    "name": "henry por metro",
+    "code": "H/m"
+  },
+  {
+    "name": "hertz",
+    "code": "Hz"
+  },
+  {
+    "name": "Intereses",
+    "code": "I"
+  },
+  {
+    "name": "Joule",
+    "code": "J"
+  },
+  {
+    "name": "joule por kilogramo kelvin",
+    "code": "J/(kg·K)"
+  },
+  {
+    "name": "joule por mol kelvin",
+    "code": "J/(mol·K)"
+  },
+  {
+    "name": "joule por kelvin",
+    "code": "J/K"
+  },
+  {
+    "name": "joule por kilogramo",
+    "code": "J/kg"
+  },
+  {
+    "name": "joule por metro cúbico",
+    "code": "J/m³"
+  },
+  {
+    "name": "joule por mol",
+    "code": "J/mol"
+  },
+  {
+    "name": "Kelvin",
+    "code": "K"
+  },
+  {
+    "name": "katal",
+    "code": "Kat"
+  },
+  {
+    "name": "katal por metro cúbico",
+    "code": "kat/m³"
+  },
+  {
+    "name": "Kilogramo",
+    "code": "Kg"
+  },
+  {
+    "name": "kilogramo por metro cúbico",
+    "code": "kg/m³"
+  },
+  {
+    "name": "Kilometro",
+    "code": "Km"
+  },
+  {
+    "name": "kilovatios",
+    "code": "Kw"
+  },
+  {
+    "name": "Kilovatios por hora",
+    "code": "kWh"
+  },
+  {
+    "name": "litro",
+    "code": "L"
+  },
+  {
+    "name": "lumen",
+    "code": "Lm"
+  },
+  {
+    "name": "pulgada",
+    "code": "Ln"
+  },
+  {
+    "name": "lux",
+    "code": "Lx"
+  },
+  {
+    "name": "Metro",
+    "code": "M"
+  },
+  {
+    "name": "metro por segundo",
+    "code": "m/s"
+  },
+  {
+    "name": "metro por segundo cuadrado",
+    "code": "m/s²"
+  },
+  {
+    "name": "metro cuadrado",
+    "code": "m²"
+  },
+  {
+    "name": "metro cúbico",
+    "code": "m³"
+  },
+  {
+    "name": "minuto",
+    "code": "Min"
+  },
+  {
+    "name": "mililitro",
+    "code": "mL"
+  },
+  {
+    "name": "Milímetro",
+    "code": "Mm"
+  },
+  {
+    "name": "Mol",
+    "code": "Mol"
+  },
+  {
+    "name": "mol por metro cúbico",
+    "code": "mol/m³"
+  },
+  {
+    "name": "newton",
+    "code": "N"
+  },
+  {
+    "name": "newton por metro",
+    "code": "N/m"
+  },
+  {
+    "name": "newton metro",
+    "code": "N·m"
+  },
+  {
+    "name": "neper",
+    "code": "Np"
+  },
+  {
+    "name": "grado",
+    "code": "°"
+  },
+  {
+    "name": "Otro tipo de servicio",
+    "code": "Os"
+  },
+  {
+    "name": "Se debe indicar la descripción de la medida a utilizar",
+    "code": "Otros"
+  },
+  {
+    "name": "Onzas",
+    "code": "Oz"
+  },
+  {
+    "name": "pascal",
+    "code": "Pa"
+  },
+  {
+    "name": "pascal segundo",
+    "code": "Pa·s"
+  },
+  {
+    "name": "Quintal",
+    "code": "Qq"
+  },
+  {
+    "name": "radián",
+    "code": "Rad"
+  },
+  {
+    "name": "radián por segundo",
+    "code": "rad/s"
+  },
+  {
+    "name": "radián por segundo cuadrado",
+    "code": "rad/s²"
+  },
+  {
+    "name": "Segundo",
+    "code": "S"
+  },
+  {
+    "name": "siemens",
+    "code": "s"
+  },
+  {
+    "name": "Servicios Profesionales",
+    "code": "Sp"
+  },
+  {
+    "name": "Servicios personales",
+    "code": "Spe"
+  },
+  {
+    "name": "estereorradián",
+    "code": "Sr"
+  },
+  {
+    "name": "Servicios técnicos",
+    "code": "St"
+  },
+  {
+    "name": "sievert",
+    "code": "Sv"
+  },
+  {
+    "name": "tesla",
+    "code": "t"
+  },
+  {
+    "name": "tonelada",
+    "code": "T"
+  },
+  {
+    "name": "unidad de masa atómica unificada",
+    "code": "U"
+  },
+  {
+    "name": "unidad astronómica",
+    "code": "Ua"
+  },
+  {
+    "name": "Unidad",
+    "code": "Unid"
+  },
+  {
+    "name": "volt",
+    "code": "V"
+  },
+  {
+    "name": "volt por metro",
+    "code": "V/m"
+  },
+  {
+    "name": "Watt",
+    "code": "W"
+  },
+  {
+    "name": "watt por metro kevin",
+    "code": "W/(m·K)"
+  },
+  {
+    "name": "watt por metro cuadrado estereorradián",
+    "code": "W/(m²·sr)"
+  },
+  {
+    "name": "watt por metro cuadrado",
+    "code": "W/m²"
+  },
+  {
+    "name": "watt por estereorradián",
+    "code": "W/sr"
+  },
+  {
+    "name": "weber",
+    "code": "Wb"
+  },
+  {
+    "name": "ohm",
+    "code": "Ω"
+  }
+]
