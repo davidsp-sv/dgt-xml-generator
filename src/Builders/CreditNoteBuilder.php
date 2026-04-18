@@ -3,6 +3,7 @@
 namespace DazzaDev\DgtXmlGenerator\Builders;
 
 use DazzaDev\DgtXmlGenerator\Models\CreditNote\CreditNote;
+use LogicException;
 
 class CreditNoteBuilder extends BaseDocumentBuilder
 {
@@ -27,6 +28,10 @@ class CreditNoteBuilder extends BaseDocumentBuilder
      */
     public function getCreditNote(): CreditNote
     {
-        return $this->getDocument();
+        if (! $this->document instanceof CreditNote) {
+            throw new LogicException('Expected CreditNote document.');
+        }
+
+        return $this->document;
     }
 }

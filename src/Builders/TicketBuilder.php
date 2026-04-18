@@ -3,6 +3,7 @@
 namespace DazzaDev\DgtXmlGenerator\Builders;
 
 use DazzaDev\DgtXmlGenerator\Models\Ticket\Ticket;
+use LogicException;
 
 class TicketBuilder extends BaseDocumentBuilder
 {
@@ -27,6 +28,10 @@ class TicketBuilder extends BaseDocumentBuilder
      */
     public function getTicket(): Ticket
     {
+        if (! $this->document instanceof Ticket) {
+            throw new LogicException('Expected Ticket document.');
+        }
+
         return $this->document;
     }
 }

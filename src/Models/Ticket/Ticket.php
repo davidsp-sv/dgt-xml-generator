@@ -19,12 +19,4 @@ class Ticket extends Document
             parent::__construct($data);
         }
     }
-
-    /**
-     * Get array representation
-     */
-    public function toArray(): array
-    {
-        return parent::toArray();
-    }
 }

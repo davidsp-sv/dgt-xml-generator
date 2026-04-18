@@ -11,13 +11,10 @@ class CreditNote extends Document
      */
     public function __construct(array $data = [])
     {
-        // Document type for Credit Note
         $this->setDocumentType('03');
 
-        // Initialize credit note data
         if (! empty($data)) {
             parent::__construct($data);
-            // $this->setReferencedDocument($data['referenced_document']);
         }
     }
 
@@ -26,8 +23,6 @@ class CreditNote extends Document
      */
     public function toArray(): array
     {
-        return array_merge(parent::toArray(), [
-            // 'referenced_document' => $this->getReferencedDocument()->toArray(),
-        ]);
+        return parent::toArray();
     }
 }

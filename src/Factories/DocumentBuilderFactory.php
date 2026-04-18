@@ -6,6 +6,7 @@ use DazzaDev\DgtXmlGenerator\Builders\BaseDocumentBuilder;
 use DazzaDev\DgtXmlGenerator\Builders\CreditNoteBuilder;
 use DazzaDev\DgtXmlGenerator\Builders\DebitNoteBuilder;
 use DazzaDev\DgtXmlGenerator\Builders\InvoiceBuilder;
+use DazzaDev\DgtXmlGenerator\Builders\PurchaseInvoiceBuilder;
 use DazzaDev\DgtXmlGenerator\Builders\ReceiverMessageBuilder;
 use DazzaDev\DgtXmlGenerator\Builders\TicketBuilder;
 use InvalidArgumentException;
@@ -22,6 +23,8 @@ class DocumentBuilderFactory
 
     public const RECEIVER_MESSAGE = 'receiver-message';
 
+    public const FEC = 'fec';
+
     /**
      * Create a document builder based on document type name
      */
@@ -33,6 +36,7 @@ class DocumentBuilderFactory
             self::DEBIT_NOTE => new DebitNoteBuilder($documentData),
             self::TICKET => new TicketBuilder($documentData),
             self::RECEIVER_MESSAGE => new ReceiverMessageBuilder($documentData),
+            self::FEC => new PurchaseInvoiceBuilder($documentData),
             default => throw new InvalidArgumentException("Unsupported document type: {$documentType}")
         };
     }
@@ -75,5 +79,13 @@ class DocumentBuilderFactory
     public static function createReceiverMessage(array $documentData): ReceiverMessageBuilder
     {
         return new ReceiverMessageBuilder($documentData);
+    }
+
+    /**
+     * Create a purchase invoice (FEC) builder
+     */
+    public static function createPurchaseInvoice(array $documentData): PurchaseInvoiceBuilder
+    {
+        return new PurchaseInvoiceBuilder($documentData);
     }
 }

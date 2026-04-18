@@ -3,6 +3,7 @@
 namespace DazzaDev\DgtXmlGenerator\Builders;
 
 use DazzaDev\DgtXmlGenerator\Models\DebitNote\DebitNote;
+use LogicException;
 
 class DebitNoteBuilder extends BaseDocumentBuilder
 {
@@ -27,6 +28,10 @@ class DebitNoteBuilder extends BaseDocumentBuilder
      */
     public function getDebitNote(): DebitNote
     {
-        return $this->getDocument();
+        if (! $this->document instanceof DebitNote) {
+            throw new LogicException('Expected DebitNote document.');
+        }
+
+        return $this->document;
     }
 }

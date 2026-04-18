@@ -1,0 +1,49 @@
+<LineaDetalle>
+  <NumeroLinea>{{ line_number }}</NumeroLinea>
+  {% if item.customs_tariff_code %}
+  <PartidaArancelaria>{{ item.customs_tariff_code }}</PartidaArancelaria>
+  {% endif %}
+  <CodigoCABYS>{{ item.cabys_code }}</CodigoCABYS>
+  {% if item.commercial_codes and item.commercial_codes|length > 0 %} {% for
+  commercial_code in item.commercial_codes|slice(0,5) %}
+  <CodigoComercial>
+    <Tipo>{{ commercial_code.type.code }}</Tipo>
+    <Codigo>{{ commercial_code.code }}</Codigo>
+  </CodigoComercial>
+  {% endfor %} {% endif %}
+  <Cantidad>{{ (item.quantity|default(0))|number_format(3, '.', '') }}</Cantidad>
+  <UnidadMedida>{{ item.unit_measure.code }}</UnidadMedida>
+  {% if item.commercial_unit_measure %}
+  <UnidadMedidaComercial>{{
+    item.commercial_unit_measure
+  }}</UnidadMedidaComercial>
+  {% endif %} {% if item.vin_or_serial_numbers and
+  item.vin_or_serial_numbers|length > 0 %} {% for vin in
+  item.vin_or_serial_numbers %}
+  <NumeroVINoSerie>{{ vin }}</NumeroVINoSerie>
+  {% endfor %} {% endif %} {% if item.medication_registration %}
+  <RegistroMedicamento>{{
+    item.medication_registration
+  }}</RegistroMedicamento>
+  {% endif %} {% if item.pharmaceutical_form %}
+  <FormaFarmaceutica>{{ item.pharmaceutical_form.code }}</FormaFarmaceutica>
+  {% endif %}
+  <Detalle>{{ item.description }}</Detalle>
+  {% if include_transaction_type and item.transaction_type and item.transaction_type.code %}
+  <TipoTransaccion>{{ item.transaction_type.code }}</TipoTransaccion>
+  {% endif %}
+  <PrecioUnitario>{{ (item.unit_price|default(0))|number_format(5, '.', '') }}</PrecioUnitario>
+  <MontoTotal>{{ (item.total_amount|default(0))|number_format(5, '.', '') }}</MontoTotal>
+  {% include 'Components/discounts.xml.twig' with { 'discounts':
+  item.discounts } %}
+  <SubTotal>{{ (item.sub_total|default(0))|number_format(5, '.', '') }}</SubTotal>
+  <BaseImponible>{{ (item.taxable_base|default(0))|number_format(5, '.', '') }}</BaseImponible>
+  {% include 'Components/taxes.xml.twig' with { 'node': 'Impuesto',
+  'nodeAmount': 'Monto', 'taxes': item.taxes } only %}
+  {% if include_assumed_factory_tax %}
+  {% set assumed = item.assumed_factory_tax ?? 0 %}
+  <ImpuestoAsumidoEmisorFabrica>{{ assumed|number_format(2, '.', '') }}</ImpuestoAsumidoEmisorFabrica>
+  {% endif %}
+  <ImpuestoNeto>{{ (item.total_tax|default(0))|number_format(5, '.', '') }}</ImpuestoNeto>
+  <MontoTotalLinea>{{ (item.total|default(0))|number_format(5, '.', '') }}</MontoTotalLinea>
+</LineaDetalle>
