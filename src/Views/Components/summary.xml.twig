@@ -1,34 +1,38 @@
 <ResumenFactura>
   <CodigoTipoMoneda>
     <CodigoMoneda>{{ currency.currency_code }}</CodigoMoneda>
-    <TipoCambio>{{ currency.exchange_rate }}</TipoCambio>
+    <TipoCambio>{{ (currency.exchange_rate|default(1))|number_format(5, '.', '') }}</TipoCambio>
   </CodigoTipoMoneda>
-  <TotalServGravados>{{ summary.total_taxed_services }}</TotalServGravados>
-  <TotalServExentos>{{ summary.total_exempt_services }}</TotalServExentos>
+  <TotalServGravados>{{ (summary.total_taxed_services|default(0))|number_format(2, '.', '') }}</TotalServGravados>
+  <TotalServExentos>{{ (summary.total_exempt_services|default(0))|number_format(2, '.', '') }}</TotalServExentos>
   <TotalServExonerado>{{
-    summary.total_exonerated_services
+    (summary.total_exonerated_services|default(0))|number_format(2, '.', '')
   }}</TotalServExonerado>
   <TotalServNoSujeto>{{
-    summary.total_non_taxable_services
+    (summary.total_non_taxable_services|default(0))|number_format(2, '.', '')
   }}</TotalServNoSujeto>
   <TotalMercanciasGravadas>{{
-    summary.total_taxed_goods
+    (summary.total_taxed_goods|default(0))|number_format(2, '.', '')
   }}</TotalMercanciasGravadas>
   <TotalMercanciasExentas>{{
-    summary.total_exempt_goods
+    (summary.total_exempt_goods|default(0))|number_format(2, '.', '')
   }}</TotalMercanciasExentas>
-  <TotalMercExonerada>{{ summary.total_exonerated_goods }}</TotalMercExonerada>
-  <TotalMercNoSujeta>{{ summary.total_non_taxable_goods }}</TotalMercNoSujeta>
-  <TotalGravado>{{ summary.total_taxed }}</TotalGravado>
-  <TotalExento>{{ summary.total_exempt }}</TotalExento>
-  <TotalExonerado>{{ summary.total_exonerated }}</TotalExonerado>
-  <TotalNoSujeto>{{ summary.total_non_taxable }}</TotalNoSujeto>
-  <TotalVenta>{{ summary.total_sale }}</TotalVenta>
-  <TotalDescuentos>{{ summary.total_discounts }}</TotalDescuentos>
-  <TotalVentaNeta>{{ summary.total_net_sale }}</TotalVentaNeta>
-  {% include 'Components/taxes.xml.twig' with { 'node': 'TotalDesgloseImpuesto',
-  'nodeAmount': 'TotalMontoImpuesto', 'taxes': summary.taxes } %}
-  <TotalImpuesto>{{ summary.total_tax }}</TotalImpuesto>
+  <TotalMercExonerada>{{ (summary.total_exonerated_goods|default(0))|number_format(2, '.', '') }}</TotalMercExonerada>
+  <TotalMercNoSujeta>{{ (summary.total_non_taxable_goods|default(0))|number_format(2, '.', '') }}</TotalMercNoSujeta>
+  <TotalGravado>{{ (summary.total_taxed|default(0))|number_format(2, '.', '') }}</TotalGravado>
+  <TotalExento>{{ (summary.total_exempt|default(0))|number_format(2, '.', '') }}</TotalExento>
+  <TotalExonerado>{{ (summary.total_exonerated|default(0))|number_format(2, '.', '') }}</TotalExonerado>
+  <TotalNoSujeto>{{ (summary.total_non_taxable|default(0))|number_format(2, '.', '') }}</TotalNoSujeto>
+  <TotalVenta>{{ (summary.total_sale|default(0))|number_format(2, '.', '') }}</TotalVenta>
+  <TotalDescuentos>{{ (summary.total_discounts|default(0))|number_format(2, '.', '') }}</TotalDescuentos>
+  <TotalVentaNeta>{{ (summary.total_net_sale|default(0))|number_format(2, '.', '') }}</TotalVentaNeta>
+  {% include 'Components/taxes.xml.twig' with {
+    'node': 'TotalDesgloseImpuesto',
+    'nodeAmount': 'TotalMontoImpuesto',
+    'taxes': summary.taxes,
+    'fe_cr_es_total_desglose': true
+  } only %}
+  <TotalImpuesto>{{ (summary.total_tax|default(0))|number_format(2, '.', '') }}</TotalImpuesto>
   {% include 'Components/payments.xml.twig' %}
-  <TotalComprobante>{{ summary.total_voucher }}</TotalComprobante>
+  <TotalComprobante>{{ (summary.total_voucher|default(0))|number_format(2, '.', '') }}</TotalComprobante>
 </ResumenFactura>

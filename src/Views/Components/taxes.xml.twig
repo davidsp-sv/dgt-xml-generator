@@ -1,15 +1,22 @@
 {% for tax in taxes %}
+{% set impTaxType = tax.tax_type ?? tax.taxType %}
+{% set impIvaType = tax.iva_type ?? tax.ivaType %}
+{% set impOtherTax = tax.other_tax_type ?? tax.otherTaxType %}
 <{{ node }}>
-  <Codigo>{{ tax.tax_type.code }}</Codigo>
-  {% if tax.other_tax_type %}
-  <CodigoImpuestoOTRO>{{ tax.other_tax_type }}</CodigoImpuestoOTRO>
+  <Codigo>{{ impTaxType.code }}</Codigo>
+  {% if impOtherTax %}
+  <CodigoImpuestoOTRO>{{ impOtherTax }}</CodigoImpuestoOTRO>
   {% endif %}
-  {% if tax.iva_type %}
-  <CodigoTarifaIVA>{{ tax.iva_type.code }}</CodigoTarifaIVA>
+  {% if impIvaType %}
+  <CodigoTarifaIVA>{{ impIvaType.code }}</CodigoTarifaIVA>
   {% endif %}
+  {% if fe_cr_es_total_desglose|default(false) or node == 'TotalDesgloseImpuesto' %}
+  <{{ nodeAmount }}>{{ (tax.amount|default(0))|number_format(2, '.', '') }}</{{ nodeAmount }}>
+  {% else %}
   {% if tax.rate %}
-  <Tarifa>{{ tax.rate }}</Tarifa>
+  <Tarifa>{{ (tax.rate|default(0))|number_format(2, '.', '') }}</Tarifa>
   {% endif %}
-  <{{ nodeAmount }}>{{ tax.amount }}</{{ nodeAmount }}>
+  <{{ nodeAmount }}>{{ (tax.amount|default(0))|number_format(5, '.', '') }}</{{ nodeAmount }}>
+  {% endif %}
 </{{ node }}>
 {% endfor %}

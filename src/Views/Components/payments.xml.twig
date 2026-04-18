@@ -4,6 +4,6 @@
   {% if payment.other_payment_method %}
   <MedioPagoOtros>{{ payment.other_payment_method }}</MedioPagoOtros>
   {% endif %}
-  <TotalMedioPago>{{ payment.amount }}</TotalMedioPago>
+  <TotalMedioPago>{{ (payment.amount|default(0))|number_format(2, '.', '') }}</TotalMedioPago>
 </MedioPago>
 {% endfor %}

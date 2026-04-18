@@ -3,7 +3,7 @@
   {% include 'Components/line-item.xml.twig' with {
     item: item,
     line_number: loop.index,
-    include_transaction_type: true,
+    include_transaction_type: false,
     include_assumed_factory_tax: true
   } only %}
   {% endfor %}

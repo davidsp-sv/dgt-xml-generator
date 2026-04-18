@@ -155,12 +155,6 @@ class Document
         // Currency
         $this->setCurrency($data['currency']);
 
-        // Establishment
-        $this->setEstablishment($data['establishment']);
-
-        // Emission Point
-        $this->setEmissionPoint($data['emission_point']);
-
         // Issuer
         $this->setIssuer($data['issuer']);
 

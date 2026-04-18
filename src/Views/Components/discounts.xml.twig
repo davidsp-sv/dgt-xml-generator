@@ -1,6 +1,6 @@
 {% for discount in discounts %}
 <Descuento>
-  <MontoDescuento>{{ discount.amount }}</MontoDescuento>
+  <MontoDescuento>{{ (discount.amount|default(0))|number_format(5, '.', '') }}</MontoDescuento>
   <CodigoDescuento>{{ discount.discount_type.code }}</CodigoDescuento>
   {% if discount.other_discount_type %}
   <CodigoDescuentoOTRO>{{ discount.other_discount_type }}</CodigoDescuentoOTRO>

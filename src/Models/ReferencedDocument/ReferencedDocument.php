@@ -169,12 +169,12 @@ class ReferencedDocument
     /**
      * Set referenced document type
      */
-    public function setReferencedCode(string|array|ReferencedCode $referencedCode): void
+    public function setReferencedCode(int|string|array|ReferencedCode $referencedCode): void
     {
         if (is_array($referencedCode)) {
             $this->referencedCode = new ReferencedCode($referencedCode);
-        } elseif (is_int($referencedCode) || is_string($referencedCode)) {
-            $referencedCodeData = (new DataLoader('codigos-referencia'))->getByCode($referencedCode);
+        } elseif (is_string($referencedCode) || is_int($referencedCode)) {
+            $referencedCodeData = (new DataLoader('codigos-referencia'))->getByCode((string) $referencedCode);
             $this->referencedCode = new ReferencedCode($referencedCodeData);
         } else {
             $this->referencedCode = $referencedCode;

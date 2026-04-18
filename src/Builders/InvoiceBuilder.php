@@ -3,6 +3,7 @@
 namespace DazzaDev\DgtXmlGenerator\Builders;
 
 use DazzaDev\DgtXmlGenerator\Models\Invoice\Invoice;
+use LogicException;
 
 class InvoiceBuilder extends BaseDocumentBuilder
 {
@@ -27,6 +28,10 @@ class InvoiceBuilder extends BaseDocumentBuilder
      */
     public function getInvoice(): Invoice
     {
+        if (! $this->document instanceof Invoice) {
+            throw new LogicException('Expected Invoice document.');
+        }
+
         return $this->document;
     }
 }
