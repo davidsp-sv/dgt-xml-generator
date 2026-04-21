@@ -13,11 +13,17 @@
   {% endfor %} {% endif %}
   <Cantidad>{{ (item.quantity|default(0))|number_format(3, '.', '') }}</Cantidad>
   <UnidadMedida>{{ item.unit_measure.code }}</UnidadMedida>
+  {# XSD v4.4: TipoTransaccion → UnidadMedidaComercial → Detalle → VIN/medicamento/surtido → PrecioUnitario #}
+  {% if include_transaction_type and item.transaction_type and item.transaction_type.code %}
+  <TipoTransaccion>{{ item.transaction_type.code }}</TipoTransaccion>
+  {% endif %}
   {% if item.commercial_unit_measure %}
   <UnidadMedidaComercial>{{
     item.commercial_unit_measure
   }}</UnidadMedidaComercial>
-  {% endif %} {% if item.vin_or_serial_numbers and
+  {% endif %}
+  <Detalle>{{ item.description }}</Detalle>
+  {% if item.vin_or_serial_numbers and
   item.vin_or_serial_numbers|length > 0 %} {% for vin in
   item.vin_or_serial_numbers %}
   <NumeroVINoSerie>{{ vin }}</NumeroVINoSerie>
@@ -27,10 +33,6 @@
   }}</RegistroMedicamento>
   {% endif %} {% if item.pharmaceutical_form %}
   <FormaFarmaceutica>{{ item.pharmaceutical_form.code }}</FormaFarmaceutica>
-  {% endif %}
-  <Detalle>{{ item.description }}</Detalle>
-  {% if include_transaction_type and item.transaction_type and item.transaction_type.code %}
-  <TipoTransaccion>{{ item.transaction_type.code }}</TipoTransaccion>
   {% endif %}
   <PrecioUnitario>{{ (item.unit_price|default(0))|number_format(5, '.', '') }}</PrecioUnitario>
   <MontoTotal>{{ (item.total_amount|default(0))|number_format(5, '.', '') }}</MontoTotal>
